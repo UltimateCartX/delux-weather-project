@@ -1,4 +1,3 @@
-/* style.css */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -8,23 +7,20 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Conteneur qui englobe les trois graphiques */
 .charts-container {
     display: flex;
-    justify-content: center;  /* Aligner les graphiques au centre horizontalement */
-    gap: 20px;  /* Espace entre les graphiques */
-    flex-wrap: wrap;  /* Permet aux graphiques de se replier si l'écran est trop petit */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* Style pour chaque graphique individuel */
 .chart-wrapper {
-    width: 400px;  /* Largeur augmentée pour chaque graphique */
-    height: 300px; /* Hauteur fixe pour chaque graphique */
+    width: 400px;
+    height: 300px;
     text-align: center;
 }
 
-/* Canvas prend tout l'espace de la boîte parente */
 canvas {
     width: 100%;
-    height: 100%; /* Prend toute la hauteur de la boîte parente */
+    height: 100%;
 }
