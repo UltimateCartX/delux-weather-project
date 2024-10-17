@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphiques de Mesures</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Graphiques Température, Humidité et Qualité de l'Air</h1>
+
+    <!-- Conteneur des graphiques -->
+    <div class="charts-container">
+        <div class="chart-wrapper">
+            <h2>Température (°C)</h2>
+            <canvas id="tempChart"></canvas>
+        </div>
+
+        <div class="chart-wrapper">
+            <h2>Humidité (%)</h2>
+            <canvas id="humidityChart"></canvas>
+        </div>
+
+        <div class="chart-wrapper">
+            <h2>Qualité de l'air (ppm)</h2>
+            <canvas id="airQualityChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>
