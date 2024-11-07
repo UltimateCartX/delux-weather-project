@@ -1,0 +1,1 @@
+Pour ma part, je me suis chargé du site web et du scripting. Ce projet m'a permis d'utiliser JavaScript pour la première fois, un language que j'ai trouvé très compliqué à comprendre. J'avoue avoir eu recours à l'IA pour le JavaScript, étant donné mes compétences encore limitées dans ce domaine.

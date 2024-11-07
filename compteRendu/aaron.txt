@@ -1,0 +1,1 @@
+J'ai été chargé de construire le circuit Arduino et de coder le programme. Le plus dûr était de m'habituer à ce language ésotérique qu'est le C++, à part cela, le reste s'est très bien passé. J'ai également été chargé de mettre en place le dépot sur GitHub et de polir certains aspects du site web
