@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphiques de Mesures</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Station Météo DeLux</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Graphiques Température, Humidité et Qualité de l'Air</h1>
-
-    <!-- Conteneur des graphiques -->
-    <div class="charts-container">
-        <div class="chart-wrapper">
-            <h2>Température (°C)</h2>
-            <canvas id="tempChart"></canvas>
-        </div>
-
-        <div class="chart-wrapper">
-            <h2>Humidité (%)</h2>
-            <canvas id="humidityChart"></canvas>
-        </div>
-
-        <div class="chart-wrapper">
-            <h2>Qualité de l'air (ppm)</h2>
-            <canvas id="airQualityChart"></canvas>
-        </div>
+    <header>
+        <a href="./index.html"><img id="banner" src="./assets/banner.png" height="75"/></a>
+        <nav id="buttonContainer">
+            <a class="button" href="./stats.html">Compte-Rendu</a>
+        </nav>
+    </header>
+    <div id="sunContainer">
+        <img id="sun" src="./assets/sun.png"/>
+        <div id="sunLabel">8°C</div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="java.js"></script>
+    <div id="cloudContainer">
+        <img id="cloud" src="./assets/cloud.png"/>
+        <img id="pabloLeNuage" src="./assets/cloud.png"/>
+        <img id="robertLeNuage" src="./assets/cloud.png"/>
+        <div id="cloudLabel">52%</div>
+    </div>
+    <p id="timeLabel"></p>
+    <p id="qualityLabel">L'air est de bonne qualité</p>
 </body>
 </html>

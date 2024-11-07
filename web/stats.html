@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphiques de Mesures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img id="banner" src="./assets/banner.png" height="75"/></a>
+        <nav id="buttonContainer">
+            <a class="button" href="./stats.html">Compte-Rendu</a>
+        </nav>
+    </header>
+    <h1>Rapport du 17 octobre 2024</h1>
+    <p class="text">Le 17 octobre 2024, nous avons mesuré la température, l'humidité et la qualité de l'air à l'aide d'un environment Arduino. En dessous se trouve les statistiques des valeurs relevées (à partir de 10h30 sur une durée de 45 minutes)</p>
+    <div id="statsContainer">
+        <img class="stat" src="./assets/temp.png"/>
+        <img class="stat" src="./assets/humid.png"/>
+        <img class="stat" src="./assets/qual.png"/>
+    </div>
+    <h1>Le circuit Arduino est très simple:</h1>
+    <div id="imgContainer">
+        <img id="arduino" src="./assets/arduino.png"/>
+        <img id="photo" src="./assets/photo.jpg"/>
+    </div>
+    <p class="text">Un Arduino Uno doté d'un Shield Carte SD et d'un Grove Arduino Shield Base est branché à notre ordinateur. Un capteur de température, d'humidité et de qualité de l'air, et un écran LCD, sont connectés au Grove. Les valeurs mesurées par les capteurs sont affichées sur l'écran LCD et sont enregistrés dans un fichier txt dans la carte sd. La couleur de fond de l'écran change en fonction de la qualité de l'air (de vert à orange à rouge)</p>
+    <h1>Le code Arduino est aussi très simple:</h1>
+    <img id="code" src="./assets/code.png"/>
+    <p class="text">Vous voulez le copié? Rendez-vous <a href="https://github.com/UltimateCartX/arduino-weather-project/blob/main/meteo.ino">ici</a></p>
+    <h1>Nos témoinages</h1>
+    <div class="resumeContainer">
+        <figure>
+            <img src="./assets/mii.png" class="border shadow">
+            <figcaption>Aaron "UltimateCartX" Ragon</figcaption>
+        </figure>
+        <p class="text">J'ai été chargé de construire le circuit Arduino et de coder le programme. Le plus dûr était de m'habituer à ce language ésotérique qu'est le C++, à part cela, le reste s'est très bien passé. J'ai également été chargé de mettre en place le dépot sur GitHub et de polir certains aspects du site web</p>
+    </div>
+    <div class="resumeContainer">
+        <p class="text">Pour ma part, je me suis chargé du site web et du scripting. Ce projet m'a permis d'utiliser JavaScript pour la première fois, un language que j'ai trouvé très compliqué à comprendre. J'avoue avoir eu recours à l'IA pour le JavaScript, étant donné mes compétences encore limitées dans ce domaine.</p>
+        <figure>
+            <img src="./assets/baku.png" class="border shadow">
+            <figcaption>Hugo "Baku103" Maillard</figcaption>
+        </figure>
+    </div>
+    <div class="resumeContainer">
+        <figure>
+            <img src="./assets/van.png" class="border shadow">
+            <figcaption>Ewann "Van-Bert" Bertrand</figcaption>
+        </figure>
+        <p class="text">De mon côté, je me suis chargé de remplir le Diagramme de Gant et cela m'a permis de découvrir ce que c'était. J'ai également contribué au développement web, même si j'éprouve des difficultés j'ai essayé d'aider du mieux que je pouvais. J'ai fait la découverte d'un site nommé GitHub, permettant de créer un espace avec des camarades afin de se transmettre des documents. Ce projet était enrichissant et a apporté de la cohésion d'équipe.</p>
+    </div>
+    <p class="text">D'un point de vue global, ce projet nous a permis a chacun de découvrir quelque chose de nouveau et d'enrichir nos acquis. Chacun était très investi dans sa tâche et n'hésitait pas à demander de l'aide à l'autre. La réunification de notre travail sur le dépot GitHub et le site web s'est passé sans difficulté et nous sommes très fier de notre projet.</p>
+</body>
+</html>

@@ -1,26 +1,240 @@
+@keyframes spin {
+    0% { transform: rotate(0deg) }
+    25% { transform: rotate(90deg) }
+    50% { transform: rotate(180deg) }
+    75% { transform: rotate(270deg) }
+    100% { transform: rotate(360deg) }
+}
+
+@keyframes slideInWowowo {
+    from { transform: translateY(-500px) }
+    to { transform: translateY(0px) }
+}
+
+@keyframes megaWoooshhhh {
+    from { transform: translateX(-750px) }
+    to { transform: translateX(0px) }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: cadetblue;
+    z-index: 91038542;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+#banner {
+    margin-left: 5px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+}
+
+.button {
+    color: white;
+    border-radius: 25%;
+    padding: 0px 25px;
+    font-size: 20px;
+    height: auto;
+    background-color: rgb(0, 139, 139);
+    margin: auto 0px;
+    border-color: rgb(0, 119, 119);
+    cursor: pointer;
+    border-style: solid;
+    text-align: center;
+    line-height: 2;
+}
+
+.button:hover {
+    border-color: rgb(0, 159, 159);
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-image: linear-gradient(#00aeff, #d8f3ff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#sunContainer {
+    display: block;
+    position: absolute;
+    top: 125px;
+    right: 5%;
+    animation: slideInWowowo 2s ease-in-out;
+    z-index: -1;
+}
+
+#sunLabel {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    color: orange;
+    font-size: 50px;
+    transform: translateY(-25px);
+}
+
+#sun {
+    display: block;
+    height: 400px;
+    animation: spin 30s linear infinite;
+    filter: drop-shadow(0 0 0.75rem yellow);
+}
+
+#cloudContainer {
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 5%;
+    animation: megaWoooshhhh 6s ease-in-out;
+    z-index: -1;
+}
+
+#cloudLabel {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    color: lightblue;
+    font-size: 50px;
+    transform: translateY(-25px);
+}
+
+#cloud {
+    display: block;
+    height: 400px;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+
+#pabloLeNuage {
+    display: block;
+    position: absolute;
+    height: 350px;
+    top: 70px;
+    left: 100px;
+    animation: megaWoooshhhh 7s ease-in-out;
+    z-index: -2;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+
+#robertLeNuage {
+    display: block;
+    position: absolute;
+    height: 300px;
+    top: 90px;
+    left: -50px;
+    animation: megaWoooshhhh 5s ease-in-out;
+    z-index: -3;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+
+#timeLabel {
+    position: fixed;
+    display: block;
+    top: 50%;
+    font-size: 45px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    filter: drop-shadow(0 0 0.1rem black);
+}
+
+#qualityLabel {
+    position: fixed;
+    bottom: 100px;
+    font-size: 45px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin: 50px 0px;
 }
 
-.charts-container {
+.text {
+    font-size: 25px;
+    margin: 50px 100px;
+}
+
+#statsContainer {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.chart-wrapper {
-    width: 400px;
-    height: 300px;
-    text-align: center;
-}
-
-canvas {
+    justify-content: space-evenly;
     width: 100%;
-    height: 100%;
+}
+
+.stat {
+    width: 600px;
+    border-color: cadetblue;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+#imgContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#arduino, #photo {
+    border-color: cadetblue;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 10px;
+    height: 500px;
+}
+
+#code {
+    width: 1000px;
+    border-radius: 10px;
+}
+
+.resumeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.resumeContainer p {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+.resumeContainer figure {
+    margin: 0px 10px;
+}
+
+.resumeContainer figure img {
+    border-color: cadetblue;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    width: 250px;
 }
